@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-desktop" version="1.0">
+  <property name="backdrop" type="empty">
+    <property name="screen0" type="empty">
+      <property name="monitor0" type="empty">
+        <property name="image-path" type="string" value="/home/lucifer/Downloads/Dark-Wallpaper-tamar20-29375968-1920-1200.jpg"/>
+        <property name="last-image" type="string" value="/home/lucifer/Downloads/Dark-Wallpaper-tamar20-29375968-1920-1200.jpg"/>
+        <property name="last-single-image" type="string" value="/home/lucifer/Downloads/Dark-Wallpaper-tamar20-29375968-1920-1200.jpg"/>
+      </property>
+      <property name="monitor1" type="empty">
+        <property name="image-path" type="string" value="/home/lucifer/Downloads/Dark-Wallpaper-tamar20-29375968-1920-1200.jpg"/>
+        <property name="last-image" type="string" value="/home/lucifer/Downloads/Dark-Wallpaper-tamar20-29375968-1920-1200.jpg"/>
+        <property name="last-single-image" type="string" value="/home/lucifer/Downloads/Dark-Wallpaper-tamar20-29375968-1920-1200.jpg"/>
+      </property>
+    </property>
+  </property>
+  <property name="desktop-icons" type="empty">
+    <property name="icon-size" type="uint" value="32"/>
+    <property name="use-custom-font-size" type="bool" value="true"/>
+    <property name="font-size" type="double" value="8.000000"/>
+    <property name="show-thumbnails" type="bool" value="false"/>
+    <property name="style" type="int" value="0"/>
+  </property>
+</channel>

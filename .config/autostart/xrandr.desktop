@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=xrandr
+Comment=Span Multimonitor
+Exec=xrandr --output VGA-0 --left-of LVDS
+StartupNotify=false
+Terminal=false
+Hidden=false
+

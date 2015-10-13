@@ -1,0 +1,430 @@
+# gmbrc version=1.1009 time=1367593948
+[Options]
+AlwaysInPlaylist: 1
+Artists_split_re:
+  - '\s*&\s*'
+  - '\s*;\s*'
+  - '\s*,\s+'
+  - '\s*/\s*'
+Artists_title_re:
+  - '\(with\s+([^)]+)\)'
+  - '\(feat\.\s+([^)]+)\)'
+AudioOut: Play_GST
+AutoRemoveCurrentSong: 1
+CloseToTray: 0
+CustomKeyBindings: {}
+DateFormat_history:
+  - '%c 604800 %A %X 86400 Today %X 60 now'
+DefaultOptions_songlist_SongList:
+  cols: playandqueue track title artist album year length playcount
+  colwidth: album 200 artist 200 file 400 lastplay 100 length 41 path 413 playandqueue 24 playcount 96 rating 80 title 270 track 21 year 31
+  follow: 1
+  sort: year album disc track
+DefaultOptions_songtree_QueueList:
+  cols: queuenumber titleaa
+  colwidth: queuenumber 20 titleaa 248
+  follow: ''
+  grouping: ''
+  isearchfields: title
+  sort: "path album:i disc track file"
+DefaultOptions_songtree_SongTree:
+  cols: playandqueueandtrack title length ratingpic
+  colwidth: artist 124 lastplay 107 length 49 playandqueue 19 playandqueueandtrack 20 playcount 22 ratingpic 100 title 390 titleaa 397 track 21
+  follow: 1
+  grouping: album|artistalbum_breadcrumbs(picsize=100)|disc|discleft(width=15)
+  isearchfields: title
+  sort: year album disc track
+DefaultRating: 50
+Default_picture: {}
+Fields_options: {}
+FilenameSchema:
+  - '%a - %l - %n - %t'
+  - '%l - %n - %t'
+  - '%n-%t'
+  - '%d%n-%t'
+FolderSchema:
+  - '%A/%l'
+  - '%A'
+  - '%A/%Y-%l'
+  - '%A - %l'
+Icecast_port: 8000
+IconTheme: elementary
+Labels:
+  - favorite
+  - bootleg
+  - broken
+  - bonus tracks
+  - interview
+  - another example
+LastFolder_Add: '/mnt/musik/0%20neu'
+LastPlayFilter: !Filter  ''
+Layout: Shimmer Desktop
+LayoutB: Browser
+LayoutF: Shimmer Party
+LayoutS: Search
+LayoutT: Shimmer Traytip
+Layouts:
+  "Shimmer Desktop":
+    FilterPane10:
+      hidebb: 1
+      hidetabs: 1
+      min: 1
+      page: artists
+      page_added:
+        type: added.year
+      page_artists:
+        lmarkup: '<b>%a</b>%Y\n<small>%x « %s</small>'
+      page_lastplay:
+        type: lastplay.year
+      pages: savedtree|artists|album|genre|label|folder|added|lastplay|rating
+    FilterPane2:
+      hidebb: 1
+      hidetabs: 1
+      min: 1
+      page: album
+      page_album:
+        mmarkup: 1
+        mode: mosaic
+        mpicsize: 96
+      pages: album
+    FilterPane3:
+      hidebb: 1
+      hidetabs: 1
+      min: 1
+      page: genre
+      page_added:
+        type: added.year
+      page_lastplay:
+        type: lastplay.year
+      pages: savedtree|artists|album|genre|label|folder|added|lastplay|rating
+    FilterPane5:
+      hidebb: 1
+      hidetabs: 1
+      min: 1
+      page: album
+      page_added:
+        type: added.year
+      page_album:
+        lmarkup: '<b>%a</b>%Y\n<small>%s « %l</small>'
+        lpicsize: 32
+      page_lastplay:
+        type: lastplay.year
+      pages: savedtree|artists|album|genre|label|folder|added|lastplay|rating
+    HPMain:
+      size: 252-744
+    NBList:
+      page: QueueList
+      page_opt: {}
+      pages: QueueList HBLyrics VBAlbuminfo VBArtistinfo
+    PluginArtistinfo:
+      site: biography
+    PluginLyrics:
+      follow: 1
+      font: Normal 10
+      justification: left
+    QueueList:
+      cols: queuenumber titleaa
+      colwidth: queuenumber 20 titleaa 248
+      follow: ''
+      grouping: ''
+      isearchfields: title
+      sort: "path album:i disc track file"
+    SimpleSearch:
+      autofilter: 1
+      casesens: 0
+      fields: title|artist|album
+      literal: 0
+      regexp: 0
+      suggest: 1
+    SongList:
+      cols: playandqueue track title artist album year length playcount
+      colwidth: album 200 artist 200 file 400 lastplay 100 length 41 path 413 playandqueue 24 playcount 96 rating 80 title 270 track 21 year 31
+      follow: 1
+      sort: year album disc track
+    SongTree:
+      cols: playandqueueandtrack title length ratingpic
+      colwidth: artist 124 lastplay 107 length 49 playandqueue 19 playandqueueandtrack 20 playcount 22 ratingpic 100 title 390 titleaa 397 track 21
+      follow: 1
+      grouping: album|artistalbum_breadcrumbs(picsize=100)|disc|discleft(width=15)
+      isearchfields: title
+      sort: year album disc track
+    Total:
+      mode: library
+    VPSongPlaylist:
+      size: 47-140
+    Window:
+      hidden: FilterPane2|VPSongPlaylist
+      pos: 75x175
+      size: 1000x750
+LayoutsLastSeen: {}
+LengthCheckMode: add
+LibraryPath: []
+Lock: ''
+MaxAutoFill: 5
+PLUGIN_ARTISTINFO: 1
+PLUGIN_ARTISTINFO_ArtistPicSize: 70
+PLUGIN_ARTISTINFO_Eventformat: '%title at %name<br>%startDate<br>%city (%country)<br><br>'
+PLUGIN_ARTISTINFO_Eventformat_history:
+  - '%title<br>%startDate<br><br>'
+  - '%title on %startDate<br><br>'
+PLUGIN_ARTISTINFO_PathFile: '~/.config/gmusicbrowser/bio/%a'
+PLUGIN_ARTISTINFO_SimilarExcludeSeed: 0
+PLUGIN_ARTISTINFO_SimilarLimit: 15
+PLUGIN_ARTISTINFO_SimilarLocal: 0
+PLUGIN_ARTISTINFO_SimilarRating: 20
+PLUGIN_FETCHCOVER: 1
+PLUGIN_FETCHCOVER_COVERFILE: cover
+PLUGIN_FETCHCOVER_PictureSite_album: googlei
+PLUGIN_FETCHCOVER_PictureSite_artist: googlei
+PLUGIN_FETCHCOVER_USEFILE: 1
+PLUGIN_LYRICS: 1
+PLUGIN_LYRICS_Font: Normal 10
+PLUGIN_LYRICS_LyricSite: lyricssongs
+PLUGIN_LYRICS_PathFile: '~/.lyrics/%a/%t.lyric'
+PLUGIN_LYRICS_PreferEmbeddedLyrics: 0
+PLUGIN_MPRIS2: 1
+PixCacheSize: 5
+PlayedMinPercent: 80
+PlayedMinSeconds: 600
+QueueAction: ''
+RecentFilters:
+  - !Filter  ''
+Repeat: 1
+SavedFilters:
+  "50 Last Added": !Filter  "added:h:50"
+  "50 Last Played": !Filter  "lastplay:h:50"
+  "50 Most Played": !Filter  "playcount:h:50"
+  "Added Today": !Filter  "added:>ago:1d"
+  "Played Today": !Filter  "lastplay:>ago:1d"
+  "never played": !Filter  "playcount:<:1"
+  "not bootleg": !Filter  "label:-~:bootleg"
+  played>4: !Filter  "playcount:>:4"
+SavedLists: {}
+SavedOn: 1367593948
+SavedSTGroupings:
+  Album: album|simple
+  "Album with picture": album|pic
+  "Artist & album": artist|simple|album|pic
+  Folder: folder|artistalbum
+  None: ''
+SavedSorts:
+  Artist,Album,Disc,Track: artist album disc track
+  Artist,Date,Album,Disc,Track: artist year album disc track
+  Date: year
+  "Last played": lastplay
+  Path,Album,Disc,Track,File: path album disc track file
+  Path,File: path file
+  "Shuffled albums": album_shuffle disc track file
+  "Shuffled albums, shuffled tracks": album_shuffle shuffle
+  Title: title
+SavedWRandoms:
+  "by added": "random:-1a50"
+  "by lastplay": "random:1l10"
+  "by lastplay & bootleg": "random:1l10\x1d-.5fbootleg"
+  "by lastplay & play count": "random:1l10\x1d-1n5"
+  "by play count": "random:-1n5"
+  "by rating": "random:1r0,.1,.2,.3,.4,.5,.6,.7,.8,.9,1"
+Sessions: 3411
+ShowTipOnSongChange: 0
+SongArray_Queue: !SongArray  ''
+SongArray_Recent: !SongArray  146 102 146 13
+Sort: shuffle
+Sort_LastOrdered: path file
+Sort_LastSR: shuffle
+StartCheck: 0
+StartScan: 0
+TAG_id3v1_encoding: iso-8859-1
+TAG_keep_id3v2_ver: 0
+TAG_no_desync: 1
+TAG_use_latin1_if_possible: 1
+TAG_write_id3v2.4: 0
+TrayTipTimeLength: 3000
+UseTray: 0
+VolumeStep: 10
+WindowSizes:
+  AdvTag: 538x503
+  EditFilter: 600x260
+  EditSort: 600x320
+  EditWRandom: 600x450
+  MassRename: 650x550
+  MassTag: 520x560
+  Rename: 300x180
+  SongInfo: 420x482
+gst_equalizer: "0:0:0:0:0:0:0:0:0:0"
+gst_equalizer_preamp: 1
+gst_rg_fallback: 0
+gst_rg_limiter: 1
+gst_rg_preamp: 6
+gst_rg_songmenu: 0
+gst_sink: autoaudio
+gst_use_equalizer: 0
+version: 1.1009
+
+[Songs]
+added	album	album_artist_raw	artist	bitrate	channel	comment	compilation	disc	file	filetype	genre	grouping	label	lastplay	lastskip	length	length_estimated	missing	modif	path	playcount	rating	replaygain_album_gain	replaygain_album_peak	replaygain_track_gain	replaygain_track_peak	samprate	size	skipcount	title	track	version	year
+1	1367593885	Public One Free Releases	Haddaway	Haddaway	320	2	http://www.youtube.com/publiconemusic	0	0	HADDAWAY - WHAT IS LOVE (PUBLIC ONE %26 REVERSERZ BOOTLEG) (extended mix).mp3	mp3 l3v1	Electronic			0	0	350	0	0	1365348855	/mnt/musik/0 neu	0		0	0	0	0	44100	13989511	0	What Is Love (Public One & Reverserz Bootleg)	0	(Public One & Reverserz Bootleg)	2013
+2	1367593885				128	2		0	0	Hard_Bass_2013_Warm-Up_Team_YELLOW_-_Frontliner_Tatanka_Bass_Modulators_Headhunterz_Live.mp3	mp3 l3v1				0	0	1375	0	0	1365483819	/mnt/musik/0 neu	0		0	0	0	0	44100	22002625	0		0		0
+3	1367593885				128	2		0	0	Headhunterz_-_Live_at_Q-dance_Tomorrowland_2012.mp3	mp3 l3v1				0	0	5469	0	0	1358748261	/mnt/musik/0 neu	0		0	0	0	0	44100	87511040	0		0		0
+4	1367593885				128	2		0	0	This_was_the_summer_of_Hardstyle_2012.mp3	mp3 l3v1				0	0	3463	0	0	1365483522	/mnt/musik/0 neu	0		0	0	0	0	44100	55403415	0		0		0
+5	1367593886	German Top 100 Single Charts		P!NK feat. Nate Ruess	222	2		0	0	001. P%21NK feat. Nate Ruess - Just Give Me A Reason.mp3	mp3 l3v1	Pop			0	0	243	0	0	1366731767	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	6743447	0	Just Give Me A Reason	1		2013
+6	1367593886	German Top 100 Single Charts		Passenger	320	2		0	0	002. Passenger - Let Her Go.mp3	mp3 l3v1	Pop			0	0	253	0	0	1366731767	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	10114980	0	Let Her Go	2		2013
+7	1367593886	German Top 100 Single Charts		Macklemore & Ryan Lewis feat. Ray Dalton	320	2		0	0	003. Macklemore %26 Ryan Lewis feat. Ray Dalton - Can't Hold Us.mp3	mp3 l3v1	Pop			0	0	258	0	0	1366731767	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	10341944	0	Can't Hold Us	3		2013
+8	1367593886	German Top 100 Single Charts		Macklemore & Ryan Lewis And Wanz	128	2		0	0	004. Macklemore %26 Ryan Lewis And Wanz - Thrift Shop.mp3	mp3 l3v1	Pop			0	0	237	0	0	1366731768	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.475	0.991419	44100	3798775	0	Thrift Shop	4		2013
+9	1367593886	German Top 100 Single Charts		The Lumineers	230	2		0	0	005. The Lumineers - Ho Hey.mp3	mp3 l3v1	Pop			0	0	163	0	0	1366731768	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	4690757	0	Ho Hey	5		2013
+10	1367593886	German Top 100 Single Charts		Will.i.aM & Britney Spears	320	2		0	0	006. Will.i.aM %26 Britney Spears - Scream %26 Shout.mp3	mp3 l3v1	Pop			0	0	282	0	0	1366731768	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.225	0.90919	44100	11264574	0	Scream & Shout	6		2013
+11	1367593886	German Top 100 Single Charts		Will.i.aM feat. Justin Bieber	320	2		0	0	007. Will.i.aM feat. Justin Bieber - %23thatPOWER.mp3	mp3 l3v1	Pop			0	0	279	0	0	1366731768	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	11147557	0	#thatPOWER	7		2013
+12	1367593886	German Top 100 Single Charts		Justin Timberlake	320	2		0	0	008. Justin Timberlake - Mirrors.mp3	mp3 l3v1	Pop			0	0	482	0	0	1366731768	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	19282931	0	Mirrors	8		2013
+13	1367593886	German Top 100 Single Charts		Imagine Dragons	320	2		0	0	009. Imagine Dragons - Radioactive.mp3	mp3 l3v1	Pop			0	1367593927	187	0	0	1366731768	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	7475800	1	Radioactive	9		2013
+14	1367593886	German Top 100 Single Charts		Capital Cities	320	2		0	0	010. Capital Cities - Safe And Sound.mp3	mp3 l3v1	Pop			0	0	190	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	7603073	0	Safe And Sound	10		2013
+15	1367593886	German Top 100 Single Charts		WAX	253	2		0	0	011. WAX - Rosana.mp3	mp3 l3v1	Pop			0	0	235	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	7457527	0	Rosana	11		2013
+16	1367593887	German Top 100 Single Charts		Rihanna feat. Mikky Ekko	320	2		0	0	012. Rihanna feat. Mikky Ekko - Stay.mp3	mp3 l3v1	Pop			0	0	241	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	48000	9631766	0	Stay	12		2013
+17	1367593887	German Top 100 Single Charts		PSY	320	2		0	0	013. PSY - Gentleman.mp3	mp3 l3v1	Pop			0	0	195	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	7783792	0	Gentleman	13		2013
+18	1367593887	German Top 100 Single Charts		James Arthur	320	2		0	0	014. James Arthur - Impossible.mp3	mp3 l3v1	Pop			0	0	206	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	8243735	0	Impossible	14		2013
+19	1367593887	German Top 100 Single Charts		Ellie Goulding	192	2		0	0	015. Ellie Goulding - Lights.mp3	mp3 l3v1	Pop			0	0	213	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	5107643	0	Lights	15		2013
+20	1367593887	German Top 100 Single Charts		Taylor Swift	239	2		0	0	016. Taylor Swift - I Knew You Were Trouble.mp3	mp3 l3v1	Pop			0	0	220	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	6556187	0	I Knew You Were Trouble	16		2013
+21	1367593887	German Top 100 Single Charts		Sido	320	2		0	0	017. Sido - Bilder Im Kopf.mp3	mp3 l3v1	Pop			0	0	239	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.585	0.846466	44100	9570796	0	Bilder Im Kopf	17		2013
+22	1367593887	German Top 100 Single Charts		Pitbull feat. Christina Aguilera	320	2		0	0	018. Pitbull feat. Christina Aguilera - Feel This Moment.mp3	mp3 l3v1	Pop			0	0	230	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	9185163	0	Feel This Moment	18		2013
+23	1367593887	German Top 100 Single Charts		OneRepublic	320	2		0	0	019. OneRepublic - If I Lose Myself.mp3	mp3 l3v1	Pop			0	0	238	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	9540311	0	If I Lose Myself	19		2013
+24	1367593887	German Top 100 Single Charts		Calvin Harris feat. Ellie Golding	249	2	http://canna.cu.to	0	0	020. Calvin Harris feat. Ellie Golding - Need Your Love.mp3	mp3 l3v1	Pop			0	0	238	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	7433291	0	Need Your Love	20		2013
+25	1367593887	German Top 100 Single Charts		Arash feat. Sean Paul	320	2		0	0	021. Arash feat. Sean Paul - She Makes Me Go.mp3	mp3 l3v1	Pop			0	0	176	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	7028403	0	She Makes Me Go	21		2013
+26	1367593887	German Top 100 Single Charts		Icona Pop feat. Charli XCX	320	2		0	0	022. Icona Pop feat. Charli XCX - I Love It.mp3	mp3 l3v1	Pop			0	0	153	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.595	0.712127	44100	6124706	0	I Love It	22		2013
+27	1367593887	German Top 100 Single Charts		Linkin Park	320	2		0	0	023. Linkin Park - Castle Of Glass.mp3	mp3 l3v1	Pop			0	0	205	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.52	0.523095	44100	8219769	0	Castle Of Glass	23		2013
+28	1367593887	German Top 100 Single Charts		The Script	320	2		0	0	024. The Script - Hall Of Fame.mp3	mp3 l3v1	Pop			0	0	199	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.625	0.748605	44100	7979361	0	Hall Of Fame	24		2013
+29	1367593887	German Top 100 Single Charts		Bruno Mars	215	2		0	0	025. Bruno Mars - When I Was Your Man.mp3	mp3 l3v1	Pop			0	0	214	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	5760277	0	When I Was Your Man	25		2013
+30	1367593887	German Top 100 Single Charts		Nelly	320	2		0	0	026. Nelly - Hey Porsche.mp3	mp3 l3v1	Pop			0	0	206	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	8256255	0	Hey Porsche	26		2013
+31	1367593887	German Top 100 Single Charts		DJ Antoine	320	2		0	0	027. DJ Antoine - Bella Vita.mp3	mp3 l3v1	Pop			0	0	204	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	8147442	0	Bella Vita	27		2013
+32	1367593887	German Top 100 Single Charts		Michael Bublé	256	2		0	0	028. Michael Bubl%C3%A9 - It's A Beautiful Day.mp3	mp3 l3v1	Pop			0	0	200	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-9.71	1	44100	6416703	0	It's A Beautiful Day	28		2013
+33	1367593887	German Top 100 Single Charts		Gentleman	320	2		0	0	029. Gentleman - You Remember.mp3	mp3 l3v1	Pop			0	0	244	0	0	1366731769	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	9744205	0	You Remember	29		2013
+34	1367593887	German Top 100 Single Charts		Swedish House Mafia feat. John Martin	245	2		0	0	030. Swedish House Mafia feat. John Martin - Don't You Worry Child (Radio Edit).mp3	mp3 l3v1	Pop			0	0	215	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.655	0.611087	44100	6573525	0	Don't You Worry Child (Radio Edit)	30		2013
+35	1367593887	German Top 100 Single Charts		Christina Stürmer	320	2		0	0	031. Christina St%C3%BCrmer - Millionen Lichter.mp3	mp3 l3v1	Pop			0	0	215	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	8599037	0	Millionen Lichter	31		2013
+36	1367593887	German Top 100 Single Charts		Florence & The Machine	320	2		0	0	032. Florence %26 The Machine - Spectrum (Say My Name).mp3	mp3 l3v1	Pop			0	0	217	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	8696084	0	Spectrum (Say My Name)	32		2013
+37	1367593887	German Top 100 Single Charts		Maxim	320	2		0	0	033. Maxim - Meine Soldaten.mp3	mp3 l3v1	Pop			0	0	203	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	8105642	0	Meine Soldaten	33		2013
+38	1367593887	German Top 100 Single Charts		Klangkarussell	320	2		0	0	034. Klangkarussell - Sonnentanz.mp3	mp3 l3v1	Pop			0	0	362	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.685	0.859773	44100	14498484	0	Sonnentanz	34		2013
+39	1367593887	German Top 100 Single Charts		Theophilus London	320	2		0	0	035. Theophilus London - Wine And Chocolates.mp3	mp3 l3v1	Pop			0	0	223	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	8919775	0	Wine And Chocolates	35		2013
+40	1367593887	German Top 100 Single Charts		David Guetta feat. Ne-Yo & Akon	256	2		0	0	036. David Guetta feat. Ne-Yo %26 Akon - Play Hard.mp3	mp3 l3v1	Pop			0	0	201	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	6428225	0	Play Hard	36		2013
+41	1367593887	German Top 100 Single Charts		Pulcino Pio	320	2		0	0	037. Pulcino Pio - Das Kleine K%C3%BCken Piept.mp3	mp3 l3v1	Pop			0	0	159	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0.62	0	44100	6373406	0	Das Kleine Küken Piept	37		2013
+42	1367593887	German Top 100 Single Charts		Birdy	221	2		0	0	038. Birdy - People Help The People.mp3	mp3 l3v1	Pop			0	0	257	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.3	0.728796	44100	7099507	0	People Help The People	38		2013
+43	1367593887	German Top 100 Single Charts		Blake Lewis	320	2		0	0	039. Blake Lewis - Your Touch.mp3	mp3 l3v1	Pop			0	0	232	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	9265642	0	Your Touch	39		2013
+44	1367593887	German Top 100 Single Charts		Olly Murs feat. Flo Rida	320	2		0	0	040. Olly Murs feat. Flo Rida - Troublemaker.mp3	mp3 l3v1	Pop			0	0	183	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	7313661	0	Troublemaker	40		2013
+45	1367593887	German Top 100 Single Charts		Nicki Minaj	242	2		0	0	041. Nicki Minaj - Va Va Voom.mp3	mp3 l3v1	Pop			0	0	182	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.785	0.615833	44100	5521632	0	Va Va Voom	41		2013
+46	1367593887	German Top 100 Single Charts		Bosse	320	2		0	0	042. Bosse - Sch%C3%B6nste Zeit.mp3	mp3 l3v1	Pop			0	0	231	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	9249804	0	Schönste Zeit	42		2013
+47	1367593887	German Top 100 Single Charts		Cro	262	2		0	0	043. Cro - Einmal Um Die Welt.mp3	mp3 l3v1	Pop			0	0	142	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.255	0.63094	44100	4646320	0	Einmal Um Die Welt	43		2013
+48	1367593887	German Top 100 Single Charts		DJane HouseKat feat. Rameez	320	2		0	0	044. DJane HouseKat feat. Rameez - All The Time.mp3	mp3 l3v1	Pop			0	0	171	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	6852411	0	All The Time	44		2013
+49	1367593887	German Top 100 Single Charts		P!NK	320	2		0	0	045. P%21NK - Try.mp3	mp3 l3v1	Pop			0	0	248	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.105	0.849223	44100	9921780	0	Try	45		2013
+50	1367593887	German Top 100 Single Charts		Tim Bendzko	228	2		0	0	046. Tim Bendzko - Wenn Worte Meine Sprache W%C3%A4ren.mp3	mp3 l3v1	Pop			0	0	210	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	6011521	0	Wenn Worte Meine Sprache Wären	46		2013
+51	1367593888	German Top 100 Single Charts		Sam And The Womp	320	2		0	0	047. Sam And The Womp - Bom Bom.mp3	mp3 l3v1	Pop			0	0	176	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	7032543	0	Bom Bom	47		2013
+52	1367593888	German Top 100 Single Charts		PSY	236	2		0	0	048. PSY - Gangnam Style.mp3	mp3 l3v1	Pop			0	0	222	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.375	0.598653	44100	6570067	0	Gangnam Style	48		2013
+53	1367593888	German Top 100 Single Charts		Luca Hänni	320	2		0	0	049. Luca H%C3%A4nni - Shameless.mp3	mp3 l3v1	Pop			0	0	210	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	8392990	0	Shameless	49		2013
+54	1367593888	German Top 100 Single Charts		Silly	320	2		0	0	050. Silly - Deine St%C3%A4rken.mp3	mp3 l3v1	Pop			0	0	215	0	0	1366731770	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	8593608	0	Deine Stärken	50		2013
+55	1367593888	German Top 100 Single Charts		Rihanna	218	2		0	0	051. Rihanna - Diamonds.mp3	mp3 l3v1	Pop			0	0	220	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.81	1.023272	44100	6007100	0	Diamonds	51		2013
+56	1367593888	German Top 100 Single Charts		Lenka	189	2		0	0	052. Lenka - Everything At Once.mp3	mp3 l3v1	Pop			0	0	159	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.165	0.919887	44100	3752623	0	Everything At Once	52		2013
+57	1367593888	German Top 100 Single Charts		Avicii vs. Nicky Romero	320	2		0	0	053. Avicii vs. Nicky Romero - I Could Be The One.mp3	mp3 l3v1	Pop			0	0	208	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	8338820	0	I Could Be The One	53		2013
+58	1367593888	German Top 100 Single Charts		Daniele Negroni	320	2		0	0	054. Daniele Negroni - Hold On My Heart.mp3	mp3 l3v1	Pop			0	0	188	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	7529939	0	Hold On My Heart	54		2013
+59	1367593888	German Top 100 Single Charts		Seeed	250	2		0	0	055. Seeed - Augenbling.mp3	mp3 l3v1	Pop			0	0	218	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.16	0.779426	44100	6810030	0	Augenbling	55		2013
+60	1367593888	German Top 100 Single Charts		The Saturdays feat. Sean Paul	320	2		0	0	056. The Saturdays feat. Sean Paul - What About Us.mp3	mp3 l3v1	Pop			0	0	219	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	8761907	0	What About Us	56		2013
+61	1367593888	German Top 100 Single Charts		Leslie Clio	320	2		0	0	057. Leslie Clio - I Couldn't Care Less.mp3	mp3 l3v1	Pop			0	0	194	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	7747278	0	I Couldn't Care Less	57		2013
+62	1367593888	German Top 100 Single Charts		Baauer	320	2		0	0	058. Baauer - Harlem Shake.mp3	mp3 l3v1	Pop			0	0	197	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	7871583	0	Harlem Shake	58		2013
+63	1367593888	German Top 100 Single Charts		Marteria, Yasha & Miss Platnum	253	2		0	0	059. Marteria, Yasha %26 Miss Platnum - Lila Wolken.mp3	mp3 l3v1	Pop			0	0	230	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.815	0.82263	44100	7269914	0	Lila Wolken	59		2013
+64	1367593888	German Top 100 Single Charts		Avril Lavigne	320	2		0	0	060. Avril Lavigne - Here's To Never Growing Up.mp3	mp3 l3v1	Pop			0	0	212	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	8466192	0	Here's To Never Growing Up	60		2013
+65	1367593888	German Top 100 Single Charts		Emeli Sand	320	2		0	0	061. Emeli Sand - Read All About It (Pt. III).mp3	mp3 l3v1	Pop			0	0	285	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.245	0.868476	44100	11392041	0	Read All About It (Pt. III)	61		2013
+66	1367593888	German Top 100 Single Charts		Carly Rae Jepsen	320	2		0	0	062. Carly Rae Jepsen - Call Me Maybe.mp3	mp3 l3v1	Pop			0	0	194	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.975	0.841251	44100	7762042	0	Call Me Maybe	62		2013
+67	1367593888	German Top 100 Single Charts		Lumidee & Fatman Scoop	229	2		0	0	063. Lumidee %26 Fatman Scoop - Dance 2013.mp3	mp3 l3v1	Pop			0	0	202	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	5791271	0	Dance 2013	63		2013
+68	1367593888	German Top 100 Single Charts		Lindsey Stirling	320	2		0	0	064. Lindsey Stirling - Crystallize.mp3	mp3 l3v1	Pop			0	0	259	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	10357820	0	Crystallize	64		2013
+69	1367593888	German Top 100 Single Charts		Alicia Keys	320	2		0	0	065. Alicia Keys - Girl On Fire (Main Version).mp3	mp3 l3v1	Pop			0	0	225	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.635	0.768872	44100	9002363	0	Girl On Fire (Main Version)	65		2013
+70	1367593888	German Top 100 Single Charts		Otto Knows	225	2		0	0	066. Otto Knows - Million Voices.mp3	mp3 l3v1	Pop			0	0	188	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.675	0.960132	44100	5280949	0	Million Voices	66		2013
+71	1367593888	German Top 100 Single Charts		Calvin Harris feat. Florence Welch	192	2		0	0	067. Calvin Harris feat. Florence Welch - Sweet Nothing.mp3	mp3 l3v1	Pop			0	0	205	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.975	0.752337	44100	4929169	0	Sweet Nothing	67		2013
+72	1367593888	German Top 100 Single Charts		Woodkid	320	2		0	0	068. Woodkid - I Love You.mp3	mp3 l3v1	Pop			0	0	227	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	9093222	0	I Love You	68		2013
+73	1367593888	German Top 100 Single Charts		Jay-Z And Kanye West	160	2		0	0	069. Jay-Z And Kanye West - Ni--as In Paris.mp3	mp3 l3v1	Pop			0	0	219	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.275	0.871207	44100	4390698	0	Ni**as In Paris	69		2013
+74	1367593888	German Top 100 Single Charts		Love The Way You Lie	320	2		0	0	070. Love The Way You Lie - Eminem feat. Rihanna.mp3	mp3 l3v1	Pop			0	0	263	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0.23	0.3954	44100	10541588	0	Eminem feat. Rihanna	70		2013
+75	1367593888	German Top 100 Single Charts		Die Toten Hosen	320	2		0	0	071. Die Toten Hosen - Drau%C3%9Fen Vor Der T%C3%BCr.mp3	mp3 l3v1	Pop			0	0	184	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	7347189	0	Draußen Vor Der Tür	71		2013
+76	1367593888	German Top 100 Single Charts		Adele	192	2		0	0	072. Adele - Skyfall.mp3	mp3 l3v1	Pop			0	0	284	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.565	0.579807	44100	6813015	0	Skyfall	72		2013
+77	1367593888	German Top 100 Single Charts		Bruno Mars	192	2		0	0	073. Bruno Mars - Locked Out Of Heaven.mp3	mp3 l3v1	Pop			0	0	231	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.44	0.692456	44100	5549161	0	Locked Out Of Heaven	73		2013
+78	1367593888	German Top 100 Single Charts		Imagine Dragons	320	2		0	0	074. Imagine Dragons - It's Time.mp3	mp3 l3v1	Pop			0	0	237	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.65	0.629563	44100	9482975	0	It's Time	74		2013
+79	1367593888	German Top 100 Single Charts		One Direction	320	2		0	0	075. One Direction - One Way Or Another.mp3	mp3 l3v1	Pop			0	0	157	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	6265613	0	One Way Or Another	75		2013
+80	1367593888	German Top 100 Single Charts		Alex Clare	320	2		0	0	076. Alex Clare - Too Close.mp3	mp3 l3v1	Pop			0	0	257	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.055	0.661158	44100	10270812	0	Too Close	76		2013
+81	1367593888	German Top 100 Single Charts		Bingo Players feat. Far East Movement	246	2		0	0	077. Bingo Players feat. Far East Movement - Get Up (Rattle).mp3	mp3 l3v1	Pop			0	0	167	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	5132564	0	Get Up (Rattle)	77		2013
+82	1367593889	German Top 100 Single Charts		Lykke Li	249	2		0	0	078. Lykke Li - I Follow Rivers.mp3	mp3 l3v1	Pop			0	0	280	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.305	0.770623	44100	8716044	0	I Follow Rivers	78		2013
+83	1367593889	German Top 100 Single Charts		Die Toten Hosen	259	2		0	0	079. Die Toten Hosen - Tage Wie Diese.mp3	mp3 l3v1	Pop			0	0	268	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.47	0.669736	44100	8677893	0	Tage Wie Diese	79		2013
+84	1367593889	German Top 100 Single Charts		Volbeat	320	2		0	0	080. Volbeat - Cape Of Our Hero.mp3	mp3 l3v1	Pop			0	0	227	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	9089948	0	Cape Of Our Hero	80		2013
+85	1367593889	German Top 100 Single Charts		Caro Emerald	320	2		0	0	081. Caro Emerald - Tangled Up.mp3	mp3 l3v1	Pop			0	0	194	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	7759790	0	Tangled Up	81		2013
+86	1367593889	German Top 100 Single Charts		Prinz Pi	320	2		0	0	082. Prinz Pi - Kompass Ohne Norden.mp3	mp3 l3v1	Pop			0	0	253	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	10118139	0	Kompass Ohne Norden	82		2013
+87	1367593889	German Top 100 Single Charts		Die Toten Hosen	255	2		0	0	083. Die Toten Hosen - Altes Fieber.mp3	mp3 l3v1	Pop			0	0	211	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.505	0.664083	44100	6729729	0	Altes Fieber	83		2013
+88	1367593889	German Top 100 Single Charts		Of Monsters And Men	265	2		0	0	084. Of Monsters And Men - Little Talks.mp3	mp3 l3v1	Pop			0	0	267	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.515	0.620521	44100	8821266	0	Little Talks	84		2013
+89	1367593889	German Top 100 Single Charts		Frank Ocean	320	2		0	0	085. Frank Ocean - Lost.mp3	mp3 l3v1	Pop			0	0	234	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	9371065	0	Lost	85		2013
+90	1367593889	German Top 100 Single Charts		Maroon 5	320	2		0	0	086. Maroon 5 - One More Night.mp3	mp3 l3v1	Pop			0	0	220	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.475	0.65379	44100	8784976	0	One More Night	86		2013
+91	1367593889	German Top 100 Single Charts		Triggerfinger	320	2		0	0	087. Triggerfinger - I Follow Rivers.mp3	mp3 l3v1	Pop			0	0	217	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.705	0.913517	48000	8682948	0	I Follow Rivers	87		2013
+92	1367593889	German Top 100 Single Charts		Katy Perry	320	2		0	0	088. Katy Perry - Firework.mp3	mp3 l3v1	Pop			0	0	228	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	9133975	0	Firework	88		2013
+93	1367593889	German Top 100 Single Charts		Gossip	269	2		0	0	089. Gossip - Move In The Right Direction.mp3	mp3 l3v1	Pop			0	0	235	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.67	0.82178	44100	7916550	0	Move In The Right Direction	89		2013
+94	1367593889	German Top 100 Single Charts		Labrinth feat. Emeli Sande	227	2		0	0	090. Labrinth feat. Emeli Sande - Beneath Your Beautiful.mp3	mp3 l3v1	Pop			0	0	272	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-5.705	0.678723	44100	7709501	0	Beneath Your Beautiful	90		2013
+95	1367593889	German Top 100 Single Charts		CHVRCHES	320	2		0	0	091. CHVRCHES - Recover.mp3	mp3 l3v1	Pop			0	0	222	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	8872585	0	Recover	91		2013
+96	1367593889	German Top 100 Single Charts		Robin Thicke	225	2		0	0	092. Robin Thicke - Blurred Lines.mp3	mp3 l3v1	Pop			0	0	261	0	0	1366731771	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	7325172	0	Blurred Lines	92		2013
+97	1367593889	German Top 100 Single Charts		Hurts	320	2		0	0	093. Hurts - Miracle.mp3	mp3 l3v1	Pop			0	0	223	0	0	1366731772	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	8910350	0	Miracle	93		2013
+98	1367593889	German Top 100 Single Charts		Cascada	320	2		0	0	094. Cascada - Glorious.mp3	mp3 l3v1	Pop			0	0	206	0	0	1366731772	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	8256096	0	Glorious	94		2013
+99	1367593889	German Top 100 Single Charts		Yeah Yeah Yeahs	192	2		0	0	095. Yeah Yeah Yeahs - Heads Will Roll.mp3	mp3 l3v1	Pop			0	0	224	0	0	1366731772	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	5370080	0	Heads Will Roll	95		2013
+100	1367593889	German Top 100 Single Charts		Rea Garvey	192	2		0	0	096. Rea Garvey - Wild Love.mp3	mp3 l3v1	Pop			0	0	223	0	0	1366731772	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	-6.235	0.93798	44100	5365435	0	Wild Love	96		2013
+101	1367593889	German Top 100 Single Charts		Nirvana	215	2		0	0	097. Nirvana - Smells Like Teen Spirit.mp3	mp3 l3v1	Pop			0	0	301	0	0	1366731772	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	8108209	0	Smells Like Teen Spirit	97		2013
+102	1367593889	German Top 100 Single Charts		Voxxclub	255	2		0	0	098. Voxxclub - Rock Mi.mp3	mp3 l3v1	Pop			0	1367593935	164	0	0	1366731772	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	5226298	1	Rock Mi	98		2013
+103	1367593889	German Top 100 Single Charts		30 Seconds To Mars	320	2		0	0	099. 30 Seconds To Mars - Up In The Air.mp3	mp3 l3v1	Pop			0	0	275	0	0	1366731772	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	11001247	0	Up In The Air	99		2013
+104	1367593889	German Top 100 Single Charts		ItaloBrothers	320	2		0	0	100. ItaloBrothers - This Is Nightlife.mp3	mp3 l3v1	Pop			0	0	162	0	0	1366731772	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013	0		0	0	0	0	44100	6465185	0	This Is Nightlife	100		2013
+105	1367593889	Lindsey Stirling	Lindsey Stirling	Lindsey Stirling	320	2	Visit us at www.p2pdl.com.	0	1	01 Lindsey Stirling - Electric Daisy Violin.mp3	mp3 l3v1	Electronic			0	0	196	0	0	1366317646	/mnt/musik/0 neu/Lindsey Stirling - Lindsey Stirling 320kbps CBR MP3 %5BVX%5D %5BP2PDL%5D	0		0	0	0	0	44100	7843089	0	Electric Daisy Violin	1		2012
+106	1367593889	Lindsey Stirling	Lindsey Stirling	Lindsey Stirling	320	2	Visit us at www.p2pdl.com.	0	1	02 Lindsey Stirling - Zi-Zi's Journey.mp3	mp3 l3v1	Electronic			0	0	197	0	0	1366317646	/mnt/musik/0 neu/Lindsey Stirling - Lindsey Stirling 320kbps CBR MP3 %5BVX%5D %5BP2PDL%5D	0		0	0	0	0	44100	7884885	0	Zi-Zi's Journey	2		2012
+107	1367593889	Lindsey Stirling	Lindsey Stirling	Lindsey Stirling	320	2	Visit us at www.p2pdl.com.	0	1	03 Lindsey Stirling - Crystallize.mp3	mp3 l3v1	Electronic			0	0	259	0	0	1366317641	/mnt/musik/0 neu/Lindsey Stirling - Lindsey Stirling 320kbps CBR MP3 %5BVX%5D %5BP2PDL%5D	0		0	0	0	0	44100	10357113	0	Crystallize	3		2012
+108	1367593889	Lindsey Stirling	Lindsey Stirling	Lindsey Stirling	320	2	Visit us at www.p2pdl.com.	0	1	04 Lindsey Stirling - Song of the Caged Bird.mp3	mp3 l3v1	Electronic			0	0	185	0	0	1366317646	/mnt/musik/0 neu/Lindsey Stirling - Lindsey Stirling 320kbps CBR MP3 %5BVX%5D %5BP2PDL%5D	0		0	0	0	0	44100	7416771	0	Song of the Caged Bird	4		2012
+109	1367593890	Lindsey Stirling	Lindsey Stirling	Lindsey Stirling	320	2	Visit us at www.p2pdl.com.	0	1	05 Lindsey Stirling - Moon Trance.mp3	mp3 l3v1	Electronic			0	0	236	0	0	1366317646	/mnt/musik/0 neu/Lindsey Stirling - Lindsey Stirling 320kbps CBR MP3 %5BVX%5D %5BP2PDL%5D	0		0	0	0	0	44100	9442828	0	Moon Trance	5		2012
+110	1367593890	Lindsey Stirling	Lindsey Stirling	Lindsey Stirling	320	2	Visit us at www.p2pdl.com.	0	1	06 Lindsey Stirling - Minimal Beat.mp3	mp3 l3v1	Electronic			0	0	216	0	0	1366317646	/mnt/musik/0 neu/Lindsey Stirling - Lindsey Stirling 320kbps CBR MP3 %5BVX%5D %5BP2PDL%5D	0		0	0	0	0	44100	8623628	0	Minimal Beat	6		2012
+111	1367593890	Lindsey Stirling	Lindsey Stirling	Lindsey Stirling	320	2	Visit us at www.p2pdl.com.	0	1	07 Lindsey Stirling - Transcendence.mp3	mp3 l3v1	Electronic			0	0	225	0	0	1366317646	/mnt/musik/0 neu/Lindsey Stirling - Lindsey Stirling 320kbps CBR MP3 %5BVX%5D %5BP2PDL%5D	0		0	0	0	0	44100	9012330	0	Transcendence	7		2012
+112	1367593890	Lindsey Stirling	Lindsey Stirling	Lindsey Stirling	320	2	Visit us at www.p2pdl.com.	0	1	08 Lindsey Stirling - Elements.mp3	mp3 l3v1	Electronic			0	0	247	0	0	1366317648	/mnt/musik/0 neu/Lindsey Stirling - Lindsey Stirling 320kbps CBR MP3 %5BVX%5D %5BP2PDL%5D	0		0	0	0	0	44100	9901538	0	Elements	8		2012
+113	1367593890	Lindsey Stirling	Lindsey Stirling	Lindsey Stirling	320	2	Visit us at www.p2pdl.com.	0	1	09 Lindsey Stirling - Shadows.mp3	mp3 l3v1	Electronic			0	0	224	0	0	1366317646	/mnt/musik/0 neu/Lindsey Stirling - Lindsey Stirling 320kbps CBR MP3 %5BVX%5D %5BP2PDL%5D	0		0	0	0	0	44100	8943367	0	Shadows	9		2012
+114	1367593890	Lindsey Stirling	Lindsey Stirling	Lindsey Stirling	320	2	Visit us at www.p2pdl.com.	0	1	10 Lindsey Stirling - Spontaneous Me.mp3	mp3 l3v1	Electronic			0	0	210	0	0	1366317641	/mnt/musik/0 neu/Lindsey Stirling - Lindsey Stirling 320kbps CBR MP3 %5BVX%5D %5BP2PDL%5D	0		0	0	0	0	44100	8383301	0	Spontaneous Me	10		2012
+115	1367593890	Lindsey Stirling	Lindsey Stirling	Lindsey Stirling	320	2	Visit us at www.p2pdl.com.	0	1	11 Lindsey Stirling - Anti Gravity.mp3	mp3 l3v1	Electronic			0	0	237	0	0	1366317648	/mnt/musik/0 neu/Lindsey Stirling - Lindsey Stirling 320kbps CBR MP3 %5BVX%5D %5BP2PDL%5D	0		0	0	0	0	44100	9480444	0	Anti Gravity	11		2012
+116	1367593890	Lindsey Stirling	Lindsey Stirling	Lindsey Stirling	320	2	Visit us at www.p2pdl.com.	0	1	12 Lindsey Stirling - Stars Align.mp3	mp3 l3v1	Electronic			0	0	290	0	0	1366317641	/mnt/musik/0 neu/Lindsey Stirling - Lindsey Stirling 320kbps CBR MP3 %5BVX%5D %5BP2PDL%5D	0		0	0	0	0	44100	11609946	0	Stars Align	12		2012
+117	1367593890	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Sound Freakerz	250	2	http://twitter.com/MC_Upper	0	0	(01) %5BSound Freakerz%5D Deal Of Power.mp3	mp3 l3v1	Techno			0	0	205	0	0	1361585369	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	7407704	0	Deal Of Power	1		2013
+118	1367593890	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Scope DJ	248	2	http://twitter.com/MC_Upper	0	0	(02) %5BScope DJ%5D Droid.mp3	mp3 l3v1	Techno			0	0	185	0	0	1361585369	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	6754579	0	Droid	2		2013
+119	1367593890	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Blutonium Boy & Bonnie Tyler	253	2	http://twitter.com/MC_Upper	0	0	(03) %5BBlutonium Boy %26 Bonnie Tyler%5D Holding Out For A Hero (Technoboy Remix).mp3	mp3 l3v1	Techno			0	0	186	0	0	1361585370	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	6873221	0	Holding Out For A Hero (Technoboy Remix)	3		2013
+120	1367593890	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Outlander	258	2	http://twitter.com/MC_Upper	0	0	(04) %5BOutlander%5D Our World.mp3	mp3 l3v1	Techno			0	0	204	0	0	1361585370	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	7565488	0	Our World	4		2013
+121	1367593890	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Frontliner Feat. John Harris	246	2	http://twitter.com/MC_Upper	0	0	(05) %5BFrontliner Feat. John Harris%5D Halos.mp3	mp3 l3v1	Techno			0	0	219	0	0	1361585370	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	7705459	0	Halos	5		2013
+122	1367593890	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		DJ Stephanie	262	2	http://twitter.com/MC_Upper	0	0	(06) %5BDJ Stephanie%5D Groovin' To The Beat.mp3	mp3 l3v1	Techno			0	0	243	0	0	1361585370	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	8950903	0	Groovin' To The Beat	6		2013
+123	1367593890	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		D-Block & S-te-Fan	268	2	http://twitter.com/MC_Upper	0	0	(07) %5BD-Block %26 S-te-Fan%5D Twisted Mind Fantasy.mp3	mp3 l3v1	Techno			0	0	153	0	0	1361585371	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	6147734	0	Twisted Mind Fantasy	7		2013
+124	1367593890	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Psyko Punkz	255	2	http://twitter.com/MC_Upper	0	0	(08) %5BPsyko Punkz%5D Stream Of Blood.mp3	mp3 l3v1	Techno			0	0	192	0	0	1361585371	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	7122916	0	Stream Of Blood	8		2013
+125	1367593890	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Artic	247	2	http://twitter.com/MC_Upper	0	0	(09) %5BArtic%5D Emotion.mp3	mp3 l3v1	Techno			0	0	254	0	0	1361585371	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	8861406	0	Emotion	9		2013
+126	1367593890	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Brennan Heart	246	2	http://twitter.com/MC_Upper	0	0	(10) %5BBrennan Heart%5D Freaqshow (2012 Anthem).mp3	mp3 l3v1	Techno			0	0	149	0	0	1361585371	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	5566319	0	Freaqshow (2012 Anthem)	10		2013
+127	1367593890	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Wildstylez & Atmozfears	261	2	http://twitter.com/MC_Upper	0	0	(11) %5BWildstylez %26 Atmozfears%5D What It's Like.mp3	mp3 l3v1	Techno			0	0	265	0	0	1361585372	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	9643424	0	What It's Like	11		2013
+128	1367593890	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Technoboy & Anklebreaker	258	2	http://twitter.com/MC_Upper	0	0	(12) %5BTechnoboy %26 Anklebreaker%5D Celebrate Life.mp3	mp3 l3v1	Techno			0	0	206	0	0	1361585372	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	7647301	0	Celebrate Life	12		2013
+129	1367593891	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Da Tweekaz	245	2	http://twitter.com/MC_Upper	0	0	(13) %5BDa Tweekaz%5D Break The Spell (Technoboy's Vision).mp3	mp3 l3v1	Techno			0	0	237	0	0	1361585372	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	8247113	0	Break The Spell (Technoboy's Vision)	13		2013
+130	1367593891	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Bass Modulators & Frequencerz	250	2	http://twitter.com/MC_Upper	0	0	(14) %5BBass Modulators %26 Frequencerz%5D Bring Back The Funk.mp3	mp3 l3v1	Techno			0	0	218	0	0	1361585373	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	7789594	0	Bring Back The Funk	14		2013
+131	1367593891	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		2Recluse	245	2	http://twitter.com/MC_Upper	0	0	(15) %5B2Recluse%5D The Madman.mp3	mp3 l3v1	Techno			0	0	225	0	0	1361585373	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	7892816	0	The Madman	15		2013
+132	1367593891	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Noisecontrollers	258	2	http://twitter.com/MC_Upper	0	0	(16) %5BNoisecontrollers%5D Sludge.mp3	mp3 l3v1	Techno			0	0	210	0	0	1361585373	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	7763888	0	Sludge	16		2013
+133	1367593891	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Stereotuners	246	2	http://twitter.com/MC_Upper	0	0	(17) %5BStereotuners%5D Alien Lifeform.mp3	mp3 l3v1	Techno			0	0	234	0	0	1361585374	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	8170685	0	Alien Lifeform	17		2013
+134	1367593891	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Cold Case & Unifite	247	2	http://twitter.com/MC_Upper	0	0	(18) %5BCold Case %26 Unifite%5D Reset Your Mind (Cold Mix).mp3	mp3 l3v1	Techno			0	0	185	0	0	1361585374	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	6715166	0	Reset Your Mind (Cold Mix)	18		2013
+135	1367593891	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Crypsis	244	2	http://twitter.com/MC_Upper	0	0	(19) %5BCrypsis%5D You Know.mp3	mp3 l3v1	Techno			0	0	155	0	0	1361585374	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	5741178	0	You Know	19		2013
+136	1367593891	Hardstyle The Ultimate Collection 2013 Vol.1 CD1		Zany & B-Front	255	2	http://twitter.com/MC_Upper	0	0	(20) %5BZany %26 B-Front%5D Victims Of The Same World.mp3	mp3 l3v1	Techno			0	0	256	0	0	1361585374	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1	0		0	0	0	0	44100	9163911	0	Victims Of The Same World	20		2013
+137	1367593891	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Blutonium Boy	268	2	http://twitter.com/MC_Upper	0	0	(01) %5BBlutonium Boy%5D Make It Loud 2012 (Headhunterz Remix).mp3	mp3 l3v1	Techno			0	0	200	0	0	1361585369	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	7704536	0	Make It Loud 2012 (Headhunterz Remix)	1		2013
+138	1367593892	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Stuback	237	2	http://twitter.com/MC_Upper	0	0	(02) %5BStuback%5D Expressions.mp3	mp3 l3v1	Techno			0	0	237	0	0	1361585370	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	8013516	0	Expressions	2		2013
+139	1367593892	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Frontliner	250	2	http://twitter.com/MC_Upper	0	0	(03) %5BFrontliner%5D All In This Together.mp3	mp3 l3v1	Techno			0	0	208	0	0	1361585370	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	7493252	0	All In This Together	3		2013
+140	1367593892	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Sound Freakerz	248	2	http://twitter.com/MC_Upper	0	0	(04) %5BSound Freakerz%5D Last Dance.mp3	mp3 l3v1	Techno			0	0	216	0	0	1361585370	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	7693509	0	Last Dance	4		2013
+141	1367593892	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Frontliner	254	2	http://twitter.com/MC_Upper	0	0	(05) %5BFrontliner%5D The First Cut (Technoboy Remix).mp3	mp3 l3v1	Techno			0	0	254	0	0	1361585370	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	9059709	0	The First Cut (Technoboy Remix)	5		2013
+142	1367593892	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Toneshifterz & Code Black	244	2	http://twitter.com/MC_Upper	0	0	(06) %5BToneshifterz %26 Code Black%5D About The Music.mp3	mp3 l3v1	Techno			0	0	256	0	0	1361585371	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	8806831	0	About The Music	6		2013
+143	1367593892	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Zany and Code Black Feat. DV8	252	2	http://twitter.com/MC_Upper	0	0	(07) %5BZany and Code Black Feat. DV8%5D Survive.mp3	mp3 l3v1	Techno			0	0	262	0	0	1361585371	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	9266763	0	Survive	7		2013
+144	1367593892	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Da Bootleggers	249	2	http://twitter.com/MC_Upper	0	0	(08) %5BDa Bootleggers%5D Bitches %26 Ho's (Digital Punks Hardstyle Refixx).mp3	mp3 l3v1	Techno			0	0	199	0	0	1361585371	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	7197457	0	Bitches & Ho's (Digital Punks Hardstyle Refixx)	8		2013
+145	1367593892	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Wildstylez & Alpha2 vs DV8 Rocks!	260	2	http://twitter.com/MC_Upper	0	0	(09) %5BWildstylez %26 Alpha2 vs DV8 Rocks%21%5D Leave It All Behind.mp3	mp3 l3v1	Techno			0	0	260	0	0	1361585371	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	9429738	0	Leave It All Behind	9		2013
+146	1367593892	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Juized	254	2	http://twitter.com/MC_Upper	0	0	(10) %5BJuized%5D World Of Dreams.mp3	mp3 l3v1	Techno			0	1367593936	216	0	0	1361585372	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	7860709	2	World Of Dreams	10		2013
+147	1367593892	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Veracocha	249	2	http://twitter.com/MC_Upper	0	0	(11) %5BVeracocha%5D Carte Blanche (Toneshifterz Remix).mp3	mp3 l3v1	Techno			0	0	183	0	0	1361585372	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	6692187	0	Carte Blanche (Toneshifterz Remix)	11		2013
+148	1367593892	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Gunz For Hire	249	2	http://twitter.com/MC_Upper	0	0	(12) %5BGunz For Hire%5D Bolivia.mp3	mp3 l3v1	Techno			0	0	263	0	0	1361585372	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	9161860	0	Bolivia	12		2013
+149	1367593892	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Recoil	252	2	http://twitter.com/MC_Upper	0	0	(13) %5BRecoil%5D Untouched.mp3	mp3 l3v1	Techno			0	0	208	0	0	1361585372	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	7554421	0	Untouched	13		2013
+150	1367593892	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Stereotuners	253	2	http://twitter.com/MC_Upper	0	0	(14) %5BStereotuners%5D No Strains.mp3	mp3 l3v1	Techno			0	0	294	0	0	1361585373	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	10295019	0	No Strains	14		2013
+151	1367593892	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Frequencerz	252	2	http://twitter.com/MC_Upper	0	0	(15) %5BFrequencerz%5D Bitch.mp3	mp3 l3v1	Techno			0	0	230	0	0	1361585373	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	8246374	0	Bitch	15		2013
+152	1367593892	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Acti & Jajox	245	2	http://twitter.com/MC_Upper	0	0	(16) %5BActi %26 Jajox%5D Satana.mp3	mp3 l3v1	Techno			0	0	227	0	0	1361585373	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	7955603	0	Satana	16		2013
+153	1367593892	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Dark Oscillators	248	2	http://twitter.com/MC_Upper	0	0	(17) %5BDark Oscillators%5D Trapped (Titan Remix).mp3	mp3 l3v1	Techno			0	0	203	0	0	1361585373	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	7308882	0	Trapped (Titan Remix)	17		2013
+154	1367593893	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Tatanka	255	2	http://twitter.com/MC_Upper	0	0	(18) %5BTatanka%5D Arabika.mp3	mp3 l3v1	Techno			0	0	197	0	0	1361585374	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	7255286	0	Arabika	18		2013
+155	1367593893	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Lady Faith	245	2	http://twitter.com/MC_Upper	0	0	(19) %5BLady Faith%5D Queen Bitch Of The Universe.mp3	mp3 l3v1	Techno			0	0	214	0	0	1361585374	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	7571315	0	Queen Bitch Of The Universe	19		2013
+156	1367593893	Hardstyle The Ultimate Collection 2013 Vol.1 CD2		Crypsis	246	2	http://twitter.com/MC_Upper	0	0	(20) %5BCrypsis%5D The Demand (Radical Redemption Remix).mp3	mp3 l3v1	Techno			0	0	215	0	0	1361585374	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2	0		0	0	0	0	44100	7606006	0	The Demand (Radical Redemption Remix)	20		2013
+
+[album]
+album_picture
+German Top 100 Single Charts\x00	/mnt/musik/0 neu/German Top 100 Single Charts 29.04.2013/Front.png
+Hardstyle The Ultimate Collection 2013 Vol.1 CD1\x00	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD1/(12) %5BTechnoboy %26 Anklebreaker%5D Celebrate Life.mp3
+Hardstyle The Ultimate Collection 2013 Vol.1 CD2\x00	/mnt/musik/0 neu/VA_-_Hardstyle_The_Ultimate_Collection_2013_Vol.1-2CD-2013-SRG/CD2/(20) %5BCrypsis%5D The Demand (Radical Redemption Remix).mp3
+Lindsey Stirling\x00album_artist=Lindsey Stirling	/mnt/musik/0 neu/Lindsey Stirling - Lindsey Stirling 320kbps CBR MP3 %5BVX%5D %5BP2PDL%5D/Lindsey Stirling.jpg
+
+[artist]
+artist_picture
